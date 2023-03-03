@@ -1,6 +1,6 @@
 :root{
     --primary-text-color: #434455;
-    --secondary-color: #2E2F42;
+    --secondary-color: #2e2f42;
     --primary-brend-color: #4D5AE5;
     --success-messages-color:#31D0AA;
     --helper-text-color:#8E8F99;
@@ -27,11 +27,13 @@ body{
 /* логотип */
 .logo-web{
     color: var(--primary-brend-color);
-    font-family: Raleway, sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 18px;
-    line-height: 1.33;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
     text-decoration: none;
     text-transform: uppercase;
+    font-weight: 800;
 }
 .logo-studio-header{
     color: var(--secondary-color);
@@ -42,9 +44,11 @@ body{
     font-family: Raleway, sans-serif;
 }
 
-
+.link{
+text-decoration: none;
+}
 /* навигация стайта */
-.site-nav .link{
+.site-nav {
     color: var(--secondary-color);
     font-size: 16px;
     line-height: 1.5;
@@ -54,7 +58,7 @@ body{
 }
 .site-nav .link:hover,
 .site-nav .link:focus{
-    color: var(--primary-brend-color);
+    color: #404bbf;
 }
 .site-nav .link:active{
     color: var(--primary-brend-color)
@@ -66,6 +70,9 @@ body{
 
 
 /* contacts */
+.adress{
+    font-style: normal;
+}
 .contacts-nav .contacts-link{
     color: var(--primary-text-color);
     font-weight: 400;
@@ -76,7 +83,7 @@ body{
 }
 .contacts-nav .contacts-link:hover,
 .contacts-nav .contacts-link:focus{
-    color: var(--primary-brend-color);
+    color: #404bbf;
 }
 
 
@@ -93,6 +100,7 @@ body{
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
+    letter-spacing: 0.02em;
 }
 .button-order{
     background-color: var(--primary-brend-color);
@@ -124,18 +132,7 @@ body{
     line-height: 1.11;
     text-align: center;
     text-transform: capitalize;
-}
-.visually-hidden{
-        position: absolute;
-        white-space: nowrap;
-        width: 1px;
-        height: 1px;
-        overflow: hidden;
-        border: 0;
-        padding: 0;
-        clip: rect(0 0 0 0);
-        clip-path: inset(50%);
-        margin: -1px;
+    letter-spacing: 0.02em
 }
 
 
@@ -202,6 +199,7 @@ background-color: var(--light-mode-backgrounds-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.04em
 }
 .buttons-item:active, .buttons-item:hover, .buttons-item:focus{
     background: #404BBF;
