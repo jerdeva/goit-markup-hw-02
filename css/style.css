@@ -14,7 +14,7 @@
 body{
     background: var(--background-color);
     color: var(--primary-text-color);
-    font-family: Roboto, sans-serif;
+    font-family: "Roboto", sans-serif;
     letter-spacing: 0.02em;
 }
 /* убираем маркеровку со списков */
@@ -31,6 +31,7 @@ body{
     font-size: 18px;
     line-height: 1.33;
     text-decoration: none;
+    text-transform: uppercase;
 }
 .logo-studio-header{
     color: var(--secondary-color);
@@ -53,7 +54,7 @@ body{
 }
 .site-nav .link:hover,
 .site-nav .link:focus{
-    color: var(--primary-text-color);
+    color: var(--primary-brend-color);
 }
 .site-nav .link:active{
     color: var(--primary-brend-color)
@@ -71,6 +72,7 @@ body{
     font-size: 16px;
     line-height: 1.5;
     text-decoration: none;
+    font-style: normal;
 }
 .contacts-nav .contacts-link:hover,
 .contacts-nav .contacts-link:focus{
@@ -101,9 +103,13 @@ body{
     font-size: 16px;
     line-height: 1.5;
     font-family: inherit;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
 }
 .button-order:hover, .button-order:focus{
-    background-color: var(--primary-brend-color);
+    background: #404BBF;
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 4px;;
 }
 .button-order:active{
     background-color: #404BBF;
@@ -117,6 +123,19 @@ body{
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
+    text-transform: capitalize;
+}
+.visually-hidden{
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        margin: -1px;
 }
 
 
